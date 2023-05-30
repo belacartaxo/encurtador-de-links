@@ -19,10 +19,13 @@
 }
 
 body{
-    padding: 30px 80px;
     width: 100vw;
     height: 100vh;
     overflow-x: hidden;
+}
+
+.container{
+    padding: 30px 80px;
 }
 
 header, header .left-column, header nav, header .login{
@@ -34,7 +37,7 @@ header{
     justify-content: space-between;
 }
 
-header .logo{
+.logo{
     font-size: 20px;
     font-weight: 700;
     margin-right: 40px;
@@ -206,7 +209,7 @@ main .copy-btn:hover{
 }
 
 main .container-motives{
-    margin-top: 50px;
+    margin-top: 80px;
     grid-area: motives;
 }
 
@@ -224,12 +227,13 @@ main .container-motive{
 main .container-motive h3{
     font-size: 16px;
     color: var(--green-dark);
-    margin: 6px 0px 3px 0px;
+    margin: 6px 0px 6px 0px;
 }
 
 main .container-motive p{
     font-size: 12px;
     color: var(--gray-light);
+    text-align: center;
 }
 
 main .motive{
@@ -242,4 +246,19 @@ main .motive{
 i{
     font-size: 34px;
     color: var(--green-dark);
+}
+
+footer{
+    background-color: var(--blue-dark);
+    width: 100%;
+    color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 80px;
+    margin-top: 40px;
+}
+
+footer div{
+    font-size: 12px;
 }
