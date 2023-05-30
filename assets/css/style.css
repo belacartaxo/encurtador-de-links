@@ -1,0 +1,48 @@
+:root{
+    --main-font: 'Poppins', sans-serif;
+
+    --green-light: #038C65;
+    --green-medium: #02735E;
+    --green-dark: #025959;
+
+    --blue-medium: #012E40;
+    --blue-dark: #011526;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: var(--main-font);
+}
+
+body{
+    padding: 30px 80px;
+    width: 100vw;
+    height: 100vh;
+}
+
+header, header .left-column, header nav, header .login{
+    display: flex;
+    text-align: center;
+}
+
+header{
+    justify-content: space-between;
+}
+
+header nav, header .login{
+    gap: 20px;
+    font-size: 14px;
+    color: rgb(180, 176, 176);
+}
+
+header .logo{
+    font-size: 20px;
+    font-weight: 700;
+    margin-right: 20px;
+}
+
+ul li{
+    list-style: none;
+}
