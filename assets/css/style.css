@@ -7,6 +7,8 @@
 
     --blue-medium: #012E40;
     --blue-dark: #011526;
+
+    --gray-light: #b5b5b5;
 }
 
 *{
@@ -24,25 +26,63 @@ body{
 
 header, header .left-column, header nav, header .login{
     display: flex;
-    text-align: center;
+    align-items: center;
 }
 
 header{
     justify-content: space-between;
 }
 
-header nav, header .login{
-    gap: 20px;
-    font-size: 14px;
-    color: rgb(180, 176, 176);
-}
-
 header .logo{
     font-size: 20px;
     font-weight: 700;
-    margin-right: 20px;
+    margin-right: 40px;
+}
+
+header nav, header .login{
+    gap: 20px;
+}
+
+header nav a, header .login button{
+    font-size: 13px;
+    color: var(--gray-light);
+}
+
+header nav a{
+    text-decoration: none;
 }
 
 ul li{
     list-style: none;
+}
+
+.transparent-button{
+    background-color: transparent;
+    border: none;
+}
+
+.green-button{
+    background-color: var(--green-light);
+    color: #ffffff !important;
+    border: none;
+    height: 30px;
+    border-radius: 15px;
+}
+
+a, li, .transparent-button, .green-button{
+    transition: 0.3s all;
+    cursor: pointer;
+}
+
+.green-button:hover{
+    background-color: var(--green-dark);
+}
+
+a:hover, li:hover, .transparent-button:hover{
+    color: var(--green-dark);
+    transform: scale(1.1);
+}
+
+header .green-button{
+    width: 80px;
 }
