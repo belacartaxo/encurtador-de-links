@@ -141,7 +141,7 @@ main .container-img .abstract-form{
     position: absolute;
     top: 0px;
     right: 0px;
-    margin-right: 40px;
+    /* margin-right: 40px; */
     z-index: -1;
 }
 
