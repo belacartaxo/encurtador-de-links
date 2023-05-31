@@ -285,12 +285,16 @@ footer div{
 }
 
 @media (max-width: 980px) {
-    main .container-text h1{
+    main .container-text h1, main .container-text h1 {
         font-size: 30px;
         line-height: 35px;
     }
-    main .container-text p{
+    main .container-text p, main .container-motive p{
         font-size: 12px;
+    }
+
+    main .original-link, main .new-link span{
+        font-size: 10px;
     }
 
     main .container-img .main-img{
@@ -334,7 +338,7 @@ footer div{
     
     main .container-img img{
         width: 250px;
-        margin-top: 30px;
+        margin-top: 50px;
     }
     
     main .container-img .abstract-form{
@@ -360,6 +364,10 @@ footer div{
         padding-top: 100px;
         margin: auto;
         max-width: 500px;
+    }
+
+    main .container-img img{
+        margin-top: 10px;
     }
 
 }
