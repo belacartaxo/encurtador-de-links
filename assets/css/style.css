@@ -101,6 +101,8 @@ main{
         "link link"
         "new-link new-link"
         "motives motives";
+        max-width: 1200px;
+        margin: auto;
 }
 
 main .container-text, main .container-img{
@@ -138,7 +140,8 @@ main .container-img{
 main .container-img .abstract-form{
     position: absolute;
     top: 0px;
-    left: 80px;
+    right: 0px;
+    margin-right: 40px;
     z-index: -1;
 }
 
@@ -163,7 +166,8 @@ main .container-link input{
     border-radius: 3px;
     border: none;
     outline: none;
-    width: 860px;
+    max-width: 1000px;
+    width: 100%;
 }
 
 main .container-link button{
@@ -261,4 +265,10 @@ footer{
 
 footer div{
     font-size: 12px;
+}
+
+@media (max-width: 700px) {
+    body{
+        background-color: red;
+    }
 }
